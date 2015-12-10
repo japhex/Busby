@@ -1,0 +1,342 @@
+/* 
+	Base styles and typography
+	-- 'partials/_base' imports 'bourbon', 'neat' and '_variables' SASS files.
+*/
+@import "bourbon/bourbon";
+@import "neat/neat";
+
+@import 'partials/_variables';
+@import 'partials/_typography';
+@import "bootstrap";
+
+.navbar {
+	color:#fff;
+
+	&-inverse {
+		background: $backgroundRed;
+	}
+	&-brand {
+		color:#fff;
+		text-transform: uppercase;
+	}
+	&-inverse {
+		.navbar-nav>li>a {
+			color:#fff;
+			@include media(min-width 320px max-width 480px, 6) {
+				margin:0 15px;
+				border-bottom: 1px solid #b42b27;
+				text-transform: uppercase;
+			}
+			&:after {
+				content: '|';
+				position: absolute;
+				right: 0;
+				top: 14px;
+				@include media(min-width 320px max-width 480px, 6) {
+					content: '';
+				}
+			}
+		}
+		.navbar-nav>li:last-child {
+			a {
+				border-bottom: 0;
+				&:after {
+					content: '';
+				}
+			}
+		}
+		.navbar-nav>li>a:hover {
+			background:#d2322d;
+		}
+		.social-media {
+			@include media(min-width 320px max-width 480px, 6) {
+				&.visible-desktop {
+					display: none;
+				}
+			}
+			&.visible-mobile {
+				@include media(min-width 768px, 6) {
+					display: none;
+				}
+				li {
+					a {
+						padding: 0 5px;
+						margin: 0 5px;
+					}
+				}
+			}
+			li {
+				@include media(min-width 320px max-width 480px, 6) {
+					display: inline-block;
+				}
+				@include media(min-width 480px max-width 768px, 6) {
+					display: inline-block;
+				}
+				a {
+					border-bottom: 0;
+
+					&:after {
+						content: '';
+					}
+					&:hover {
+						background: none;
+					}
+				}
+			}
+		}
+	}
+	.navbar-header {
+		a {
+			color:#fff;
+		}
+	}
+	.logo {
+		max-width: 23px;
+		float: left;
+		position: relative;
+		top: 3px;
+		margin-right: 13px;		
+	}
+	.social-logo {
+		max-width: 25px;
+		position: relative;
+		top: 5px;
+	}
+}
+
+.jumbotron {
+	padding-top: 80px;
+	min-height: 362px;
+	background:url(../images/hero_2.jpg) no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
+	@include media(min-width 768px max-width 991px, 6) {
+		padding-top: 125px;
+	}
+	.container {
+		background:rgba(0,0,0,0.5);
+		color:#fff;
+	}
+	p {
+		font-size:18px;
+	}
+}
+
+.hero-panel {
+	img {
+		width:39%;
+		box-sizing:border-box;
+		@include media(min-width 320px max-width 480px, 6) { 
+			width:100%;
+		}
+	}
+	.panel-content {
+		width: 60%;
+		box-sizing:border-box;
+		display: inline-block;
+		padding-left: 10px;
+		@include media(min-width 320px max-width 480px, 6) { 
+			width:100%;
+			padding:15px 0;
+		}
+		h3 {
+			margin: 0;
+		}
+		.btn {
+			margin-left: 23px;
+		}
+	}
+	img {
+		vertical-align: top;
+	}
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-transform: scale3d(1,1,1);
+        transform: scale3d(1,1,1)
+    }
+
+    50% {
+        -webkit-transform: scale3d(1.05,1.05,1.05);
+        transform: scale3d(1.05,1.05,1.05)
+    }
+
+    100% {
+        -webkit-transform: scale3d(1.05,1.05,1.05);
+        transform: scale3d(1.05,1.05,1.05)
+    }
+}
+
+@keyframes pulse {
+    0% {
+        -webkit-transform: scale3d(1,1,1);
+        -ms-transform: scale3d(1,1,1);
+        transform: scale3d(1,1,1)
+    }
+
+    50% {
+        -webkit-transform: scale3d(1.05,1.05,1.05);
+        -ms-transform: scale3d(1.05,1.05,1.05);
+        transform: scale3d(1.05,1.05,1.05)
+    }
+
+    100% {
+        -webkit-transform: scale3d(1.05,1.05,1.05);
+        -ms-transform: scale3d(1.05,1.05,1.05);
+        transform: scale3d(1.05,1.05,1.05)
+    }
+}
+
+.navbar-collapse .social-media a {padding:8px 5px 5px 5px;}
+
+.container {
+	.col-md-4 {
+		padding:0 5px;
+		@include media(min-width 320px max-width 480px, 6) { 
+			width:100%;
+		}
+		@include media(min-width 480px max-width 768px, 6) {
+			width:100%;
+		}
+	}
+	.home-module {
+		position: relative;
+		width:100%;
+		background: #eee;
+		padding: 15px;
+		margin-bottom:10px;
+		h2 {
+			font-size:17px;
+			margin:0;
+			line-height: 1em;
+			display: inline-block;
+			position: relative;
+			color: #d9534f;
+			i {
+				vertical-align: middle;
+			}
+			span {
+				/* Internet Explorer 10 */
+				display:-ms-flexbox;
+				-ms-flex-pack:center;
+				-ms-flex-align:center;
+
+				/* Firefox */
+				display:-moz-box;
+				-moz-box-pack:center;
+				-moz-box-align:center;
+
+				/* Safari, Opera, and Chrome */
+				display:-webkit-box;
+				-webkit-box-pack:center;
+				-webkit-box-align:center;
+
+				padding-right:100px;
+			}
+		}
+		p {
+			clear: both;
+			margin-top: 20px;
+			span {
+				color:#444;
+				text-decoration: underline;
+			}			
+		}
+	}
+}
+
+hr {border:1px solid #eee;}
+
+footer {
+	background:$backgroundRed;
+	color: #fff;
+	overflow:hidden;
+	small {
+		width:60%;
+		float:left;
+		padding:13px 0;
+	}
+	ul {
+		padding:15px 0 0 0;
+		width:36%;
+		float:right;
+		text-align: right;
+		li {
+			list-style-type:none;
+			display:inline-block;
+			padding-left:3px;
+			a {
+				color:#fff;
+				&:hover {
+					color:#fff;
+				}
+			}
+			&:after {
+				content:"|";
+				padding-left:8px;
+				@include media(min-width 320px max-width 480px, 6) {
+					content:"";
+				}
+			}
+			&:last-child:after {
+				content:"";
+			}			
+		}
+	}
+}
+
+.section-icon {
+	margin-right: 20px;
+	display:block;
+	img {
+		max-width: 50px;
+	}
+}
+
+.btn {
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+.home-page {
+	.hero-panel {
+		padding: 0 5px;
+	}
+}
+
+.contact-page {
+	.col-sm-6 {
+		&:last-child {
+			@include media(min-width 480px max-width 768px, 6) {
+				margin-top: 22px;
+			}
+			@include media(min-width 768px max-width 991px, 6) { 
+				margin-top: 22px;
+			}
+		}
+	}	
+}
+
+iframe {
+	@include media(min-width 320px max-width 480px, 6) {
+		width: 100%;
+	}	
+	@include media(min-width 768px max-width 991px, 6) {
+		width:100%;
+	}
+}
+
+/* Mobile */
+@include media(min-width 320px max-width 480px, 6) {
+	.about-page .home-module, .personal-page .home-module, .commerical-page .home-module, .home-module, .container .home-module {
+		min-height: inherit;
+	}
+}
+
+// Large Tablet
+@include media(min-width 768px max-width 991px, 6) {
+	.about-page .home-module, .personal-page .home-module, .commerical-page .home-module, .home-module, .container .home-module {
+		min-height: inherit;
+	}
+}

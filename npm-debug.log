@@ -1,0 +1,112 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'grunt-contrib-clean',
+1 verbose cli   '--save-dev' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.36
+4 warn package.json node-authentication@ No description
+5 warn package.json node-authentication@ No repository field.
+6 warn package.json node-authentication@ No README data
+7 verbose readDependencies using package.json deps
+8 verbose cache add [ 'grunt-contrib-clean', null ]
+9 verbose cache add name=undefined spec="grunt-contrib-clean" args=["grunt-contrib-clean",null]
+10 verbose parsed url { protocol: null,
+10 verbose parsed url   slashes: null,
+10 verbose parsed url   auth: null,
+10 verbose parsed url   host: null,
+10 verbose parsed url   port: null,
+10 verbose parsed url   hostname: null,
+10 verbose parsed url   hash: null,
+10 verbose parsed url   search: null,
+10 verbose parsed url   query: null,
+10 verbose parsed url   pathname: 'grunt-contrib-clean',
+10 verbose parsed url   path: 'grunt-contrib-clean',
+10 verbose parsed url   href: 'grunt-contrib-clean' }
+11 silly lockFile 862f7e58-grunt-contrib-clean grunt-contrib-clean
+12 verbose lock grunt-contrib-clean /Users/jamielawrence/.npm/862f7e58-grunt-contrib-clean.lock
+13 silly lockFile 862f7e58-grunt-contrib-clean grunt-contrib-clean
+14 silly lockFile 862f7e58-grunt-contrib-clean grunt-contrib-clean
+15 verbose addNamed [ 'grunt-contrib-clean', '' ]
+16 verbose addNamed [ null, '*' ]
+17 silly lockFile 8bff91c3-grunt-contrib-clean grunt-contrib-clean@
+18 verbose lock grunt-contrib-clean@ /Users/jamielawrence/.npm/8bff91c3-grunt-contrib-clean.lock
+19 silly addNameRange { name: 'grunt-contrib-clean', range: '*', hasData: false }
+20 verbose request where is /grunt-contrib-clean
+21 verbose request registry https://registry.npmjs.org/
+22 verbose request id 1e70fede4cd17ef8
+23 verbose url raw /grunt-contrib-clean
+24 verbose url resolving [ 'https://registry.npmjs.org/', './grunt-contrib-clean' ]
+25 verbose url resolved https://registry.npmjs.org/grunt-contrib-clean
+26 verbose request where is https://registry.npmjs.org/grunt-contrib-clean
+27 info trying registry request attempt 1 at 15:58:08
+28 verbose etag "6BJZZTQTNQINWKVASOU9LFXBD"
+29 http GET https://registry.npmjs.org/grunt-contrib-clean
+30 http 200 https://registry.npmjs.org/grunt-contrib-clean
+31 silly registry.get cb [ 200,
+31 silly registry.get   { date: 'Fri, 20 Mar 2015 15:58:08 GMT',
+31 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+31 silly registry.get     etag: '"CJ5RZCNJZLYBTFPUKB23R5F57"',
+31 silly registry.get     'content-type': 'application/json',
+31 silly registry.get     'cache-control': 'max-age=60',
+31 silly registry.get     'content-length': '23222',
+31 silly registry.get     'accept-ranges': 'bytes',
+31 silly registry.get     via: '1.1 varnish',
+31 silly registry.get     age: '23',
+31 silly registry.get     'x-served-by': 'cache-fra1228-FRA',
+31 silly registry.get     'x-cache': 'HIT',
+31 silly registry.get     'x-cache-hits': '2',
+31 silly registry.get     'x-timer': 'S1426867088.673151,VS0,VE0',
+31 silly registry.get     vary: 'Accept',
+31 silly registry.get     'keep-alive': 'timeout=10, max=50',
+31 silly registry.get     connection: 'Keep-Alive' } ]
+32 silly addNameRange number 2 { name: 'grunt-contrib-clean', range: '*', hasData: true }
+33 silly addNameRange versions [ 'grunt-contrib-clean',
+33 silly addNameRange   [ '0.1.0',
+33 silly addNameRange     '0.2.0',
+33 silly addNameRange     '0.3.0',
+33 silly addNameRange     '0.3.1',
+33 silly addNameRange     '0.3.2',
+33 silly addNameRange     '0.4.0',
+33 silly addNameRange     '0.4.1',
+33 silly addNameRange     '0.5.0',
+33 silly addNameRange     '0.6.0',
+33 silly addNameRange     '0.4.0-a',
+33 silly addNameRange     '0.4.0-rc5',
+33 silly addNameRange     '0.4.0-rc6' ] ]
+34 verbose addNamed [ 'grunt-contrib-clean', '0.6.0' ]
+35 verbose addNamed [ '0.6.0', '0.6.0' ]
+36 silly lockFile 0a668ef6-grunt-contrib-clean-0-6-0 grunt-contrib-clean@0.6.0
+37 verbose lock grunt-contrib-clean@0.6.0 /Users/jamielawrence/.npm/0a668ef6-grunt-contrib-clean-0-6-0.lock
+38 silly lockFile a195317b-an-grunt-contrib-clean-0-6-0-tgz https://registry.npmjs.org/grunt-contrib-clean/-/grunt-contrib-clean-0.6.0.tgz
+39 verbose lock https://registry.npmjs.org/grunt-contrib-clean/-/grunt-contrib-clean-0.6.0.tgz /Users/jamielawrence/.npm/a195317b-an-grunt-contrib-clean-0-6-0-tgz.lock
+40 verbose addRemoteTarball [ 'https://registry.npmjs.org/grunt-contrib-clean/-/grunt-contrib-clean-0.6.0.tgz',
+40 verbose addRemoteTarball   'f532dba4b8212674c7c013e146bda6638b9048f6' ]
+41 info retry fetch attempt 1 at 15:58:08
+42 verbose fetch to= /var/folders/wd/1gvyykzs39v5l2k15h31csq00000gn/T/npm-6206-YRXOquaK/registry.npmjs.org/grunt-contrib-clean/-/grunt-contrib-clean-0.6.0.tgz
+43 http GET https://registry.npmjs.org/grunt-contrib-clean/-/grunt-contrib-clean-0.6.0.tgz
+44 http 200 https://registry.npmjs.org/grunt-contrib-clean/-/grunt-contrib-clean-0.6.0.tgz
+45 silly lockFile a195317b-an-grunt-contrib-clean-0-6-0-tgz https://registry.npmjs.org/grunt-contrib-clean/-/grunt-contrib-clean-0.6.0.tgz
+46 silly lockFile a195317b-an-grunt-contrib-clean-0-6-0-tgz https://registry.npmjs.org/grunt-contrib-clean/-/grunt-contrib-clean-0.6.0.tgz
+47 silly lockFile 0a668ef6-grunt-contrib-clean-0-6-0 grunt-contrib-clean@0.6.0
+48 silly lockFile 0a668ef6-grunt-contrib-clean-0-6-0 grunt-contrib-clean@0.6.0
+49 silly lockFile 8bff91c3-grunt-contrib-clean grunt-contrib-clean@
+50 silly lockFile 8bff91c3-grunt-contrib-clean grunt-contrib-clean@
+51 error Error: EACCES, mkdir '/Users/jamielawrence/.npm/grunt-contrib-clean/0.6.0'
+51 error  { [Error: EACCES, mkdir '/Users/jamielawrence/.npm/grunt-contrib-clean/0.6.0']
+51 error   errno: 3,
+51 error   code: 'EACCES',
+51 error   path: '/Users/jamielawrence/.npm/grunt-contrib-clean/0.6.0',
+51 error   parent: 'node-authentication' }
+52 error Please try running this command again as root/Administrator.
+53 error System Darwin 14.1.0
+54 error command "/usr/local/bin/node" "/usr/local/bin/npm" "install" "grunt-contrib-clean" "--save-dev"
+55 error cwd /Users/jamielawrence/Documents/Websites/_Aqueduct/TeamGB/src/TeamGB.FrontEnd
+56 error node -v v0.10.36
+57 error npm -v 1.4.28
+58 error path /Users/jamielawrence/.npm/grunt-contrib-clean/0.6.0
+59 error code EACCES
+60 error errno 3
+61 error stack Error: EACCES, mkdir '/Users/jamielawrence/.npm/grunt-contrib-clean/0.6.0'
+62 verbose exit [ 3, true ]
